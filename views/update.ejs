@@ -1,0 +1,35 @@
+<body>
+    <form name="form4" method="POST">
+    <table>
+        <tr>
+            <td><input type="text" name="_id", value=<%= record._id %> required hidden ></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="_rev", value=<%= record._rev %> required hidden ></td>
+                </tr>
+        <tr>
+        <td>Name</td>
+        <td><input type="text" name="name", value=<%= record.name %> required readonly ></td>
+        </tr>
+        <tr>
+        <td>Location</td>
+        <td><input type="text" name="location" value=<%= record.location %> required readonly></td>
+        </tr>
+        <tr>
+            <td>How old:</td>
+            <td><input type="number" name="age" value=<%= record.age %> required readonly></td>
+            </tr>
+            <tr>
+                <td>Epmloyee Strength</td>
+                <td><input type="number" name="employees" value=<%= record.employees %> required readonly></td>
+                </tr>
+                <tr>
+                    <td>Amonut</td>
+                    <td><input type="number" name="amount" required></td>
+                    </tr>
+        <tr>
+        <td colspan="2"><input type="submit" value="Save" ></td>
+        </tr>
+    </table>
+    </form>   
+</body>

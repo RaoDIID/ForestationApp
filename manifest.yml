@@ -1,0 +1,7 @@
+applications:
+- name: ForestationApp
+  random-route: true
+  command: npm start
+  path: .
+  memory: 256M
+  innstances: 1

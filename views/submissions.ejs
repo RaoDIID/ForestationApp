@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Forestation - Changing Climate</title>
+<style>
+    /* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+    body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .GeneratedMarquee {
+        font-family:'Comic Sans MS';
+        font-size:2em;
+        line-height:1.3em;
+        color:#330099;
+        background-color:#CCFFFF;
+        padding:1.5em;
+
+    }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: rgb(60,255,51);
+        padding: 10px 0;
+        color: rgb(60,255,51);
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+    }
+    nav a{
+        /* color: #fff; */
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <!-- Codes by HTML.am -->
+
+<!-- CSS Code -->
+<style type="text/css" scoped>
+    .GeneratedMarquee {
+    font-family:'Comic Sans MS';
+    font-size:2em;
+    line-height:1.3em;
+    color:#330099;
+    background-color:#CCFFFF;
+    padding:1.5em;
+    
+    }
+    </style>
+    
+    <!-- HTML Code -->
+    <marquee class="GeneratedMarquee" direction="left" scrollamount="5" behavior="scroll">Plant trees, Save future...Changing climate, making a difference!</marquee>
+    
+    
+            <!-- <img src="E:\Installables\NodeJS\code\Test1\resources\header.jpg" alt="logo" width="100%"" height="10%" /> -->
+            <!-- <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Products</a>
+                <a href="#">Services</a>
+                <a href="#">Contact Us</a>
+            </nav> -->
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <h1>Submissions by NGO</h1>
+    <table>
+        <tr>
+          <th>Submission ID</th>  
+          <th>Proposal ID</th>
+          <th>NGO name</th>
+          <th>Amount</th>
+          <th>Location</th>
+          <th>Contact number</th>
+          <th>Number of trees</th>
+        </tr>
+        <% for(let i=0; i<docs.length; i++) {%>
+            <tr>
+                <td><%= docs[i]._id %></td>
+                <td><%= docs[i].proposalid %></td>
+                <td><%= docs[i].ngoname %></td>
+                <td><%= docs[i].contact %></td>
+                <td><%= docs[i].amount %></td>
+                <td><%= docs[i].location %></td>
+                <td><%= docs[i].numtrees %></td>
+              </tr>
+        <% } %>
+        </table>
+        <br/><br/>
+    <a href="/allocation">Allocate booking</a>
+    <div class="fixed-footer">
+        <div class="container">Copyright &copy; Government of India</div>        
+    </div> 
+</body>
+</html>
