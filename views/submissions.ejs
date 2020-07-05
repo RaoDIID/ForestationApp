@@ -100,6 +100,7 @@ tr:nth-child(even) {
           <th>Amount</th>
           <th>Location</th>
           <th>Contact number</th>
+          <th>Email</th>
           <th>Number of trees</th>
         </tr>
         <% for(let i=0; i<docs.length; i++) {%>
@@ -107,9 +108,10 @@ tr:nth-child(even) {
                 <td><%= docs[i]._id %></td>
                 <td><%= docs[i].proposalid %></td>
                 <td><%= docs[i].ngoname %></td>
-                <td><%= docs[i].contact %></td>
                 <td><%= docs[i].amount %></td>
                 <td><%= docs[i].location %></td>
+                <td><%= docs[i].contact %></td>
+                <td><%= docs[i].email %></td>
                 <td><%= docs[i].numtrees %></td>
               </tr>
         <% } %>
